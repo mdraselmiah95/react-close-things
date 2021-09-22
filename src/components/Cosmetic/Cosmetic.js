@@ -17,7 +17,7 @@ const Cosmetic = (props) => {
       <p>{about.slice(0, 150)}</p>
       <h5>{address}</h5>
       <h5>{company}</h5>
-      <button onClick={handlePurchase(_id)}>Purchase</button>
+      <button onClick={() => handlePurchase(_id)}>Purchase</button>
     </div>
   );
 };
