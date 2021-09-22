@@ -1,13 +1,12 @@
 import React from "react";
-// import { add, multiply } from "../utilities/storage";
-import { add, multiply } from "../utilities/storage";
 
 const Cosmetics = () => {
-  const first = 44;
-  const second = 92;
-  const sum = add(first, second);
-  const multi = multiply(first, second);
-
+  const cosmetice = [
+    { id: 1, name: "Perfume", price: 299 },
+    { id: 2, name: "Colors", price: 389 },
+    { id: 3, name: "Face mask", price: 799 },
+    { id: 4, name: "Mascara", price: 599 },
+  ];
   return <div></div>;
 };
 
