@@ -8,6 +8,9 @@ const Cosmetic = (props) => {
     //set to local storage
     console.log(id);
   };
+
+  //   const withParameter = (id) => handlePurchase(id);
+
   return (
     <div className="Cosmetic">
       <h2>Name:{name}</h2>
