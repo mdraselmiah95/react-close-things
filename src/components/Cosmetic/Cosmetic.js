@@ -1,4 +1,5 @@
 import React from "react";
+import { addToDb } from "../utilities/fakedb";
 // import "./Cosmetic.css";
 import "./Cosmetic.css";
 const Cosmetic = (props) => {
@@ -6,7 +7,8 @@ const Cosmetic = (props) => {
   const { name, about, address, age, balace, company, _id } = props.cosmetic;
   const handlePurchase = (id) => {
     //set to local storage
-    console.log(id);
+    //   console.log(id);
+    addToDb(id);
   };
 
   //   const withParameter = (id) => handlePurchase(id);
