@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const Cosmetics = () => {
-  const cosmetice = [
-    { id: 1, name: "Perfume", price: 299 },
-    { id: 2, name: "Colors", price: 389 },
-    { id: 3, name: "Face mask", price: 799 },
-    { id: 4, name: "Mascara", price: 599 },
-  ];
+  const [cosmetics, setCosmetics] = useState([]);
+  useEffect(() => {
+    fetch("./cosmetics.json")
+      .then((res) => res.json())
+      .then((data) => console.log(data));
+  }, []);
+
   return <div></div>;
 };
 
