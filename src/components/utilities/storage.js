@@ -29,3 +29,15 @@ for (const num of numbers) {
 const reducer = (previous, current) => previous + current;
 
 numbers.reduce(reducer, 0);
+
+const products = [
+  { id: 1, name: "Alta", price: 132 },
+  { id: 2, name: "Watch", price: 2132 },
+  { id: 3, name: "phone", price: 13002 },
+  { id: 4, name: "Mascara", price: 1320 },
+];
+
+let total = 0;
+for (const product of products) {
+  total = total + product.price;
+}
