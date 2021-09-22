@@ -1,4 +1,5 @@
 import React from "react";
+// import { add, multiply } from "../utilities/storage";
 import { add, multiply } from "../utilities/storage";
 
 const Cosmetics = () => {
