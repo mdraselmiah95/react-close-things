@@ -10,7 +10,7 @@ const Cosmetic = (props) => {
       <h2>Name:{name}</h2>
       <h4>Age: {age}</h4>
       <h5>Balance: {balace}</h5>
-      <p>{about}</p>
+      <p>{about.slice(0, 150)}</p>
       <h5>{address}</h5>
       <h5>{company}</h5>
     </div>
