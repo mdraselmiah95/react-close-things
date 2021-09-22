@@ -1,5 +1,5 @@
 import React from "react";
-import { addToDb } from "../utilities/fakedb";
+import { addToDb, deleteFromDb } from "../utilities/fakedb";
 // import "./Cosmetic.css";
 import "./Cosmetic.css";
 const Cosmetic = (props) => {
@@ -11,6 +11,9 @@ const Cosmetic = (props) => {
     addToDb(id);
   };
 
+  const handleRemove = (id) => {
+    deleteFromDb(id);
+  };
   //   const withParameter = (id) => handlePurchase(id);
 
   return (
@@ -23,6 +26,7 @@ const Cosmetic = (props) => {
       <h5>{address}</h5>
       <h5>{company}</h5>
       <button onClick={() => handlePurchase(_id)}>Purchase</button>
+      <button onClick={() => handleRemove(_id)}>Delete</button>
     </div>
   );
 };
