@@ -41,3 +41,8 @@ let total = 0;
 for (const product of products) {
   total = total + product.price;
 }
+
+const productReducer = (previous, current) => previous + current;
+
+const productTotal = products.reduce(productReducer, 0);
+console.log(productTotal);
